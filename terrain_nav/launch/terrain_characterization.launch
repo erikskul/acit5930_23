@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+    <launch>
+    
+        <include file="$(find terrain_characterizer)/launch/rs_camera.launch"/>
+
+        <node name="terrain_characterizer" pkg="terrain_characterizer" type="pointCloudPlaneFitter" output="screen"/>
+
+        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find terrain_nav)/rviz/terrain_characterizer.rviz"/>
+        
+    </launch>
+
+        

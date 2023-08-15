@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+    <launch>
+
+        <include file="$(find terrain_characterizer)/launch/rs_camera.launch"/>
+
+        <include file="$(find elevation_mapping_demos)/launch/scout_mini_demo.launch"/>
+
+        <!-- <include file="$(find traversability_estimation)/launch/traversability_estimation.launch"/>
+
+        <include file="$(find traversability_estimation)/launch/visualization.launch"/> -->
+        
+        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find terrain_nav)/rviz/traversability_estimation.rviz"/>
+
+    </launch>

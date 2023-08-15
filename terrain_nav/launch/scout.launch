@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+    <launch>
+
+        <node name="can_bringup" pkg="scout_bringup" type="bringup_can2usb.bash"/>
+
+        <include file="$(find scout_bringup)/launch/scout_mini_robot_base.launch"/>
+        
+    </launch>

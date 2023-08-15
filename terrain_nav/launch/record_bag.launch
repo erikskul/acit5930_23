@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="rosbag" pkg="rosbag" type="record"  output="screen" args="-o /home/eriks/scout_ws/
+    /tf 
+    /tf_static
+    /camera/color/camera_info
+    /camera/depth/camera_info
+    /camera/color/image_raw/compressed
+    /camera/depth/color/points
+    /odom
+    /odom/as_pose
+    /scout_status
+    /BMS_status
+    /rosout
+    /rosout_agg
+    "/>
+
+
+</launch>
